@@ -1,0 +1,61 @@
+<mat-card appearance="outlined">
+  <mat-card-content>
+    <mat-toolbar color="primary">
+      <span>Musicas Para Ouvir Programando</span>
+    </mat-toolbar>
+    <div *ngIf=" musics$ | async as musics; else loading">
+      <table mat-table [dataSource]="musics" class="mat-elevation-z8">
+        <!-- Position Column -->
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef> Nome </th>
+          <td mat-cell *matCellDef="let music"> {{music.nome}} </td>
+        </ng-container>
+
+        <!-- Autor Column -->
+        <ng-container matColumnDef="autor">
+          <th mat-header-cell *matHeaderCellDef> Autor </th>
+          <td mat-cell *matCellDef="let music"> {{music.autor}} </td>
+        </ng-container>
+
+        <!-- Album Column -->
+        <ng-container matColumnDef="link">
+          <th mat-header-cell *matHeaderCellDef> Link Youtube </th>
+          <td mat-cell *matCellDef="let music"> {{music.link}}
+          </td>
+        </ng-container>
+
+        <!-- Album Column -->
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef>
+            Ações
+            <button mat-mini-fab="Adicionar Música">
+              <mat-icon (click)="onAdd()" >add</mat-icon>
+            </button>
+          </th>
+
+          <td mat-cell *matCellDef="let music">
+            <div class="button-group">
+              <button mat-mini-fab="Editar Música">
+                <mat-icon (click)="onEdit(music)">edit</mat-icon>
+              </button>
+
+              <button mat-mini-fab="Adicionar Música">
+                <mat-icon (click)="onDelete(music)">delete</mat-icon>
+              </button>
+            </div>
+          </td>
+
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+      </table>
+    </div>
+    <ng-template #loading>
+      <div class="wait-spinner">
+        <mat-spinner></mat-spinner>
+      </div>
+    </ng-template>
+  </mat-card-content>
+</mat-card>
