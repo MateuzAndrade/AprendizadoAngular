@@ -1,0 +1,26 @@
+<mat-card appearance="outlined" class="container">
+  <div class="content">
+    <mat-card-content class="title">
+      Como você quer receber seu pedido?
+    </mat-card-content>
+
+    <div class="buttons">
+      <button mat-raised-button color="warn" class="button">
+        DELIVERY
+      </button>
+
+      <span class="ou">ou</span>
+
+      <button mat-raised-button color="warn" class="button">
+        RETIRAR NA LANCHONETE
+      </button>
+    </div>
+  </div>
+</mat-card>
+<mat-grid-list cols="4" rowHeight="100px">
+  @for (tile of tiles; track tile) {
+  <mat-grid-tile [colspan]="tile.cols" [rowspan]="tile.rows"
+    [style.background]="tile.color">{{tile.text}}</mat-grid-tile>
+  }
+</mat-grid-list>
+

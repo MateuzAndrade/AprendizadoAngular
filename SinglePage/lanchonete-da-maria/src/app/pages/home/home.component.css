@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.title {
+  color: #303131;
+  font-style: italic;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ou {
+  font-style: italic;
+  font-size: 18px;
+  color: #7e7e7e;
+}
+
+mat-card {
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
