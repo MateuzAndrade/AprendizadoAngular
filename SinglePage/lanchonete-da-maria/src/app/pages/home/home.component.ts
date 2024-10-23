@@ -5,6 +5,7 @@ export interface Tile {
   cols: number;
   rows: number;
   text: string;
+  image: string;
 }
 
 
@@ -15,9 +16,9 @@ export interface Tile {
 })
 export class HomeComponent {
   tiles: Tile[] = [
-    { text: 'One', cols: 3, rows: 1, color: 'lightblue' },
-    { text: 'Two', cols: 1, rows: 2, color: 'lightgreen' },
-    { text: 'Three', cols: 1, rows: 1, color: 'lightpink' },
-    { text: 'Four', cols: 2, rows: 1, color: '#DDBDF1' },
+    { text: 'One', cols: 3, rows: 4, color: 'lightblue', image:'/images/delicia.png' },
+    { text: 'Two', cols: 1, rows: 2, color: 'lightgreen', image: '/images/hotdog.png' },
+    { text: 'Three', cols: 1, rows: 2, color: 'red', image: '/images/pizza.png' },
+    { text: 'Four', cols: 4, rows: 1, color: 'lightpink', image: '/images/todoslanches.png' },
   ];
 }

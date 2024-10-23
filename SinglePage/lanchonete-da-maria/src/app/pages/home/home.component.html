@@ -17,10 +17,14 @@
     </div>
   </div>
 </mat-card>
-<mat-grid-list cols="4" rowHeight="100px">
-  @for (tile of tiles; track tile) {
-  <mat-grid-tile [colspan]="tile.cols" [rowspan]="tile.rows"
-    [style.background]="tile.color">{{tile.text}}</mat-grid-tile>
-  }
-</mat-grid-list>
+<mat-card appearance="outlined" class="folder">
+  <mat-grid-list cols="4" rowHeight="100px" class="content_folder" gutterSize="15px">
+    @for (tile of tiles; track tile) {
+    <mat-grid-tile [colspan]="tile.cols" [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      <img [src]="tile.image" class="tile-image" />
+    </mat-grid-tile>
+    }
+  </mat-grid-list>
 
+</mat-card>
