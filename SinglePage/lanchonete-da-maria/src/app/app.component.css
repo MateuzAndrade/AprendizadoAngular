@@ -1,0 +1,44 @@
+/* styles.css ou app.component.css */
+html,
+body {
+  height: 100%;
+  /* Ocupa 100% da altura da tela */
+  margin: 0;
+  /* Remove margens padrão */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /* Organiza os filhos em coluna */
+  min-height: 100vh;
+  /* Garante que o contêiner ocupe no mínimo a altura da tela */
+}
+
+router-outlet {
+  flex: 1;
+  /* Faz o conteúdo ocupar todo o espaço disponível */
+}
+
+app-footer {
+  margin-top: auto;
+  /* Empurra o footer para a parte inferior */
+}
+
+/* footer.component.css */
+.footer {
+  background-color: #f8f9fa;
+  /* Cor de fundo */
+  padding: 20px 0;
+  /* Espaçamento vertical */
+  position: fixed;
+  /* Mantém o footer fixo na parte inferior */
+  bottom: 0;
+  /* Para fixar na parte inferior */
+  left: 0;
+  /* Para fixar no lado esquerdo */
+  right: 0;
+  /* Para fixar no lado direito */
+  width: 100%;
+  /* Para ocupar a largura total */
+}
