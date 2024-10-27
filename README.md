@@ -14,13 +14,13 @@ Aqui você encontrará meus projetos e experimentos desenvolvidos enquanto estud
 Cada pasta contém um projeto ou experimento específico, com seu próprio **README** para explicar as funcionalidades implementadas e como utilizá-las.
 
 🛠️ Tecnologias Utilizadas
-Angular: Framework front-end
-TypeScript: Linguagem utilizada no desenvolvimento
-Angular CLI: Ferramenta para criação e gerenciamento dos projetos
-Angular Material: Biblioteca de componentes UI (em alguns projetos)
+- Angular: Framework front-end
+- TypeScript: Linguagem utilizada no desenvolvimento
+- Angular CLI: Ferramenta para criação e gerenciamento dos projetos
+- Angular Material: Biblioteca de componentes UI (em alguns projetos)
 
 📚 Referências de Estudo
-Documentação Oficial do Angular
-Angular Material
-TypeScript Handbook
+- Documentação Oficial do Angular
+- Angular Material
+- TypeScript Handbook
 
