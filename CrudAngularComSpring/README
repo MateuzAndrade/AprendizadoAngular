@@ -1,5 +1,4 @@
-
-# CRUD Angular + Spring
+## CRUD Angular + Spring
 
 Este projeto é um **CRUD completo** desenvolvido utilizando **Angular** no front-end e **Spring Boot** no back-end. Ele permite a criação, leitura, atualização e exclusão de registros, proporcionando uma interface amigável e uma API REST funcional.
 
